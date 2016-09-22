@@ -1,5 +1,5 @@
 // Copyright (c) 2016 Vasco Silva
-var active = false;
+var active = document.designMode === 'on' ? true : false;
 
 function updateIcon() {
   active = !active;
