@@ -35,11 +35,3 @@ function toggleDesignMode() {
 
 // Listener for when the extension button is clicked
 chrome.browserAction.onClicked.addListener(toggleDesignMode);
-
-
-chrome.tabs.onUpdated.addListener(function() {
-  console.log('cenas');
-  chrome.tabs.executeScript({
-    code: 'document.body.style.background = "red"', allFrames: true
-  });
-});
